@@ -155,6 +155,7 @@ C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.AssemblyInfo.cs
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.csproj.CoreCompileInputs.cache
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.sourcelink.json
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

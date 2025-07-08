@@ -116,6 +116,33 @@ namespace AuthService.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("11111111-1111-1111-1111-111111111111"),
+                            AadhaarNumber = "",
+                            AlternateMobile = "",
+                            College = "",
+                            CurrentAddress = "",
+                            Email = "admin@bookmyjob.com",
+                            FathersMobile = "",
+                            FathersName = "",
+                            FullName = "Admin User",
+                            Gender = "",
+                            IsProfileComplete = false,
+                            MothersMobile = "",
+                            MothersName = "",
+                            Nationality = "",
+                            PancardNumber = "",
+                            PassportNumber = "",
+                            Password = "6G94qKPK8LYNjnTllCqm2G3BUM08AzOK7yW30tfjrMc=",
+                            PermanentAddress = "",
+                            RegulationDocumentLink = "",
+                            Role = "Admin",
+                            RollNumber = 0,
+                            WhatsappNumber = ""
+                        });
                 });
 #pragma warning restore 612, 618
         }

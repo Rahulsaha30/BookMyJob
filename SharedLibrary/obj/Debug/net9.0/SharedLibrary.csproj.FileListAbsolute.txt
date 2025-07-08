@@ -12,3 +12,4 @@ C:\Users\KIIT\BookMyJob\SharedLibrary\obj\Debug\net9.0\refint\SharedLibrary.dll
 C:\Users\KIIT\BookMyJob\SharedLibrary\obj\Debug\net9.0\SharedLibrary.pdb
 C:\Users\KIIT\BookMyJob\SharedLibrary\obj\Debug\net9.0\SharedLibrary.genruntimeconfig.cache
 C:\Users\KIIT\BookMyJob\SharedLibrary\obj\Debug\net9.0\ref\SharedLibrary.dll
+C:\Users\KIIT\BookMyJob\SharedLibrary\obj\Debug\net9.0\SharedLibrary.sourcelink.json
