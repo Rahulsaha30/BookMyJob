@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Consul;
+using SharedLibrary.Consul;
+using AdminService.Service; // Update this if your RegisterConsul class is in a different namespace
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +15,15 @@ builder.Services.AddDbContext<AdminDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // 2. Register Service
-builder.Services.AddScoped<IJobPostService, AdminService.Services.AdminServices>(); // Make sure 'AdminServices' is the actual class name
+builder.Services.AddScoped<IJobPostService, AdminServices>(); // Make sure 'AdminServices' is the actual class name
+
+builder.Services.AddScoped<ConsulServiceResolver>();
+
+// 🔹 Add Consul Client
+builder.Services.AddSingleton<IConsulClient, ConsulClient>(p => new ConsulClient(cfg =>
+{
+    cfg.Address = new Uri("http://localhost:8500");
+}));
 
 // 3. Add Controllers
 builder.Services.AddControllers();
@@ -29,7 +40,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(secretKey))
+                Encoding.UTF8.GetBytes(secretKey!))
         };
     });
 
@@ -43,4 +54,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// 🔹 Register this service with Consul
+app.RegisterConsul(app.Configuration);
+
 app.Run();

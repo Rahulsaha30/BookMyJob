@@ -54,6 +54,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.7.14.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[9.0.6, )"
@@ -158,6 +162,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Consul": {
+              "target": "Package",
+              "version": "[1.7.14.7, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.0, )"

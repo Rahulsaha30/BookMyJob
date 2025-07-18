@@ -170,3 +170,5 @@ C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\refint\AuthService.dll
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.pdb
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\AuthService.genruntimeconfig.cache
 C:\Users\KIIT\BookMyJob\AuthService\obj\Debug\net9.0\ref\AuthService.dll
+C:\Users\KIIT\BookMyJob\AuthService\bin\Debug\net9.0\Consul.dll
+C:\Users\KIIT\BookMyJob\AuthService\bin\Debug\net9.0\Newtonsoft.Json.dll

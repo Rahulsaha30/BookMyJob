@@ -138,3 +138,5 @@ C:\Users\KIIT\BookMyJob\AdminService\obj\Debug\net9.0\refint\AdminService.dll
 C:\Users\KIIT\BookMyJob\AdminService\obj\Debug\net9.0\AdminService.pdb
 C:\Users\KIIT\BookMyJob\AdminService\obj\Debug\net9.0\AdminService.genruntimeconfig.cache
 C:\Users\KIIT\BookMyJob\AdminService\obj\Debug\net9.0\ref\AdminService.dll
+C:\Users\KIIT\BookMyJob\AdminService\bin\Debug\net9.0\Consul.dll
+C:\Users\KIIT\BookMyJob\AdminService\bin\Debug\net9.0\Newtonsoft.Json.dll
